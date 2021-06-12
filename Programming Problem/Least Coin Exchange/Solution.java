@@ -25,17 +25,21 @@ public class Solution {
      */
     static int exchangeCounter(int[] coins, int amount, int[] memo){
 
+        //check if there's solution inside memo/cache
         if(memo[amount] != 0){
             return memo[amount];
         }
-
+        
+        //return 0 if amount = 0
         else if(amount == 0 ){
             return 0;
         }
         
+        //return -1 if coins bigger than amount
         else if(amount < 0){
             return -1;
         }
+        //counting minimum value
         else {
             int min = Integer.MAX_VALUE;
 
