@@ -43,6 +43,11 @@ public class Solution {
         else {
             int min = Integer.MAX_VALUE;
 
+            //iterate coins
+            //count value
+            //check if current min < min
+            //save into memo
+
                
 
             
